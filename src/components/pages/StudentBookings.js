@@ -50,7 +50,7 @@ function StudentBookings() {
       <td>
         <button
           onClick={() => {
-            fetch(`http://localhost:8080/api/bookings/${b.id}`, {
+            fetch(`https://facility-booking-backend.onrender.com/api/bookings/${b.id}`, {
               method: "DELETE"
             }).then(() => {
               setBookings(bookings.filter(x => x.id !== b.id));
