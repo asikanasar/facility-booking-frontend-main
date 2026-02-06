@@ -4,12 +4,12 @@ function AdminBookings() {
   const [bookings, setBookings] = useState([]);
 
   const fetchBookings = () => {
-    fetch("https://facility-booking-backend.onrender.com")
+   fetch("https://facility-booking-backend.onrender.com")
       .then((res) => res.json())
       .then((data) => setBookings(data));
   };
 
-  useEffect(() => {
+   useEffect(() => {
     fetchBookings();
   }, []);
 
